@@ -1,100 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreeCodeCamp Portfolio Project</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar with id="navbar" -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#welcome-section" class="nav-logo">My Portfolio</a>
-            <ul class="nav-links">
-                <li><a href="#welcome-section">Home</a></li>
-                <li><a href="#projects-section">Projects</a></li>
-                <li><a href="#profile-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Welcome section with id="welcome-section" -->
-    <section id="welcome-section">
-        <h1>Welcome to My Portfolio</h1>
-        <p>My name is Dickson, Nse-Abasi D. </br>This is my first ever FreeCodeCamp portfolio project that i executed.</p>
-    </section>
-
-    <!-- Projects section with id="projects-section" -->
-    <section id="projects-section">
-        <h2 class="section-title">My FreeCodeCamp Projects</h2>
-        <div class="projects-grid">
-            
-            <!-- Project 1: Tribute Page -->
-            <div class="project-tile">
-                <div class="project-image">📜</div>
-                <div class="project-content">
-                    <h3 class="project-title">Tribute Page</h3>
-                    <p class="project-description">A tribute page dedicated to someone inspiring. Built with HTML and CSS.</p>
-                    <a href="../tribute-page/" target="_blank" class="project-link">Live Demo</a>
-                </div>
-            </div>
-            
-            <!-- Project 2: Survey Form -->
-            <div class="project-tile">
-                <div class="project-image">📋</div>
-                <div class="project-content">
-                    <h3 class="project-title">Survey Form</h3>
-                    <p class="project-description">A customer feedback survey form with modern styling and validation.</p>
-                    <a href="../survey-form/" target="_blank" class="project-link">Live Demo</a>
-                </div>
-            </div>
-            
-            <!-- Project 3: Product Landing Page -->
-            <div class="project-tile">
-                <div class="project-image">🛍️</div>
-                <div class="project-content">
-                    <h3 class="project-title">Product Landing Page</h3>
-                    <p class="project-description">A product landing page for a fictional product with call-to-action.</p>
-                    <a href="../product-landing/" target="_blank" class="project-link">Live Demo</a>
-                </div>
-            </div>
-            
-            <!-- Project 4: Technical Documentation Page -->
-            <div class="project-tile">
-                <div class="project-image">📚</div>
-                <div class="project-content">
-                    <h3 class="project-title">Technical Documentation</h3>
-                    <p class="project-description">A technical documentation page for JavaScript concepts and methods.</p>
-                    <a href="../technical-doc/" target="_blank" class="project-link">Live Demo</a>
-                </div>
-            </div>
-            
-            <!-- Project 5: Personal Portfolio -->
-            <div class="project-tile">
-                <div class="project-image">👤</div>
-                <div class="project-content">
-                    <h3 class="project-title">Personal Portfolio</h3>
-                    <p class="project-description">This very portfolio! A showcase of all my FreeCodeCamp projects.</p>
-                    <a href="#" target="_blank" class="project-link">Live Demo</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Profile Link Section -->
-    <section class="profile-section">
-        <h2>Connect With Me</h2>
-        <!-- Profile link with id="profile-link" and target="_blank" -->
-        <a id="profile-link" href="https://github.com/likedat1981" target="_blank">Visit My GitHub Profile</a>
-    </section>
-
-    <!--this particular page is ready for publishing, while other link pages will be uploaded later for publishing too-->
+  <!-- HEADER -->
+  <header id="header">
+    <img id="header-img" src="https://via.placeholder.com/150" alt="Logo">
     
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 | FreeCodeCamp Portfolio Project</p>
-    </footer>
-</body>
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#video-section">Video</a>
+      <a class="nav-link" href="#signup">Sign Up</a>
+    </nav>
+  </header>
 
+  <!-- FEATURES SECTION -->
+  <section id="features">
+    <h2>Product Features</h2>
+    <p>Here are some amazing features of our product.</p>
+  </section>
+
+  <!-- VIDEO SECTION -->
+  <section id="video-section">
+    <h2>Product Video</h2>
+    <video id="video" controls src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+  </section>
+
+  <!-- SIGNUP FORM SECTION -->
+  <section id="signup">
+    <h2>Sign Up for Updates</h2>
+    <form id="form" action="https://www.freecodecamp.org/email-submit">
+      <input id="email" name="email" type="email" placeholder="Enter your email" required>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <p>&copy; 2026 Product Landing Page. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>
