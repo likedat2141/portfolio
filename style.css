@@ -226,7 +226,7 @@ body {
 }
 
 .certification-tile {
-  background: blueviolet;
+  background: rebeccapurple;
   border-radius: 24px;
   padding: 1.8rem;
   text-align: center;
@@ -250,20 +250,20 @@ body {
 .certification-tile h3 {
   font-size: 1.3rem;
   margin: 1rem 0;
-  color: #0f1722;
+  color: #5bce19;
 }
 
 .certification-tile a {
   display: inline-block;
   margin-top: 0.5rem;
-  color: #4caf;
+  color: #dce6dc;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s;
 }
 
 .certification-tile a:hover {
-  color: #fff;
+  color: #2c7a2d;
   text-decoration: underline;
 }
 

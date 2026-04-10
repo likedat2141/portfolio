@@ -1,37 +1,20 @@
-// Mobile navigation toggle
+
+// Get the navbar element
 const navbar = document.getElementById('navbar');
+
+// Get the nav links container
 const navLinks = document.querySelector('.nav-links');
-const toggleButton = document.querySelector('.nav-toggle');
 
-// Add toggle functionality
-if (toggleButton) {
-  toggleButton.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
-}
+// Create a toggle button for mobile devices
+const toggleButton = document.createElement('button');
+toggleButton.innerHTML = '☰'; // Hamburger icon
+toggleButton.classList.add('nav-toggle');
 
-// Close mobile menu when a link is clicked
-const navItems = document.querySelectorAll('.nav-links a');
-navItems.forEach(link => {
-  link.addEventListener('click', () => {
-    if (navLinks.classList.contains('show')) {
-      navLinks.classList.remove('show');
-    }
-  });
+// Add the toggle button to the navbar
+navbar.appendChild(toggleButton);
+
+// Add event listener to the toggle button
+toggleButton.addEventListener('click', () => {
+  // Toggle the 'show' class on the nav links container
+  navLinks.classList.toggle('show');
 });
-
-// Optional: Smooth scroll for all anchor links (already handled by CSS, but ensures consistency)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    const targetId = this.getAttribute('href');
-    if (targetId === "#" || targetId === "") return;
-    const targetElement = document.querySelector(targetId);
-    if (targetElement) {
-      e.preventDefault();
-      targetElement.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
-
-// Simple console greeting (just for fun)
-console.log("Portfolio ready! 🚀 Built for FreeCodeCamp");
